@@ -4,6 +4,9 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 等待-通知
+ */
 public class WaitNotify {
     private static boolean flag = true;
     private static Object lock = new Object();
