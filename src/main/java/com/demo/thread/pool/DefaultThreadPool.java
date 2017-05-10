@@ -54,7 +54,11 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
                 }
 
                 if (null != job) {
-                    job.run();
+                    try {
+                        job.run();
+                    } catch (Exception ignore) {
+                        ignore.printStackTrace();
+                    }
                 }
             }
         }
