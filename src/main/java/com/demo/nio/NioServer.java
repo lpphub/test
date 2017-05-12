@@ -37,7 +37,7 @@ public class NioServer {
         System.out.println("start listen...");
         while (true) {
             look();
-            if (selector.select(1000) == 0) {
+            if (selector.select(3000) == 0) {
                 System.out.print("监听等待着...");
                 continue;
             }
