@@ -56,11 +56,5 @@ public class PoolTest {
 
         System.out.println(pool.getJobSize());
 //        pool.shutdown();
-
-        try {
-            Thread.sleep(4000L);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 }
